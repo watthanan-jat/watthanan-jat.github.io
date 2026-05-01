@@ -3,9 +3,372 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Watthanan Jatuviriyapornchai</title>
+  <meta name="description" content="Academic homepage for Asst. Prof. Dr. Watthanan Jatuviriyapornchai, Department of Mathematics, Faculty of Science, Mahidol University.">
+  <title>Asst. Prof. Dr. Watthanan Jatuviriyapornchai</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --text: #111111;
+      --muted: #555555;
+      --light: #777777;
+      --rule: #e5e5e5;
+      --background: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.65;
+    }
+
+    a {
+      color: var(--text);
+      text-decoration: underline;
+      text-decoration-color: #b8b8b8;
+      text-underline-offset: 0.18em;
+    }
+
+    a:hover {
+      text-decoration-color: var(--text);
+    }
+
+    .page {
+      width: min(100%, 980px);
+      margin: 0 auto;
+      padding: 48px 24px 64px;
+    }
+
+    header {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 36px;
+      padding: 44px 0 48px;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    nav a {
+      color: var(--muted);
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      color: var(--text);
+    }
+
+    .eyebrow {
+      margin: 0 0 12px;
+      color: var(--muted);
+      font-size: 0.92rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2,
+    h3 {
+      margin: 0;
+      font-weight: 600;
+      line-height: 1.18;
+      letter-spacing: 0;
+    }
+
+    h1 {
+      max-width: 760px;
+      font-size: clamp(2.4rem, 7vw, 4.8rem);
+    }
+
+    h2 {
+      font-size: 1.25rem;
+    }
+
+    h3 {
+      font-size: 1.02rem;
+    }
+
+    .lead {
+      max-width: 720px;
+      margin: 24px 0 0;
+      color: var(--muted);
+      font-size: 1.16rem;
+    }
+
+    .meta {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+      margin-top: 32px;
+      color: var(--muted);
+    }
+
+    .meta p {
+      margin: 0;
+    }
+
+    section {
+      display: grid;
+      grid-template-columns: minmax(150px, 230px) 1fr;
+      gap: 42px;
+      padding: 46px 0;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    section:last-of-type {
+      border-bottom: 0;
+    }
+
+    .section-label {
+      color: var(--light);
+      font-size: 0.92rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .content > *:first-child {
+      margin-top: 0;
+    }
+
+    .content > *:last-child {
+      margin-bottom: 0;
+    }
+
+    .interests {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+      gap: 10px 24px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .interests li {
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--rule);
+      color: var(--muted);
+    }
+
+    .projects,
+    .publications {
+      display: grid;
+      gap: 22px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .projects li,
+    .publication {
+      padding-bottom: 22px;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .projects li:last-child,
+    .publication:last-child {
+      padding-bottom: 0;
+      border-bottom: 0;
+    }
+
+    .publication p,
+    .projects p {
+      margin: 6px 0 0;
+      color: var(--muted);
+    }
+
+    .publication .venue {
+      color: var(--light);
+      font-size: 0.95rem;
+    }
+
+    footer {
+      padding-top: 24px;
+      color: var(--light);
+      font-size: 0.92rem;
+    }
+
+    @media (max-width: 720px) {
+      .page {
+        padding: 28px 20px 48px;
+      }
+
+      header {
+        padding: 28px 0 36px;
+      }
+
+      section {
+        grid-template-columns: 1fr;
+        gap: 18px;
+        padding: 36px 0;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>Watthanan Jatuviriyapornchai</h1>
+  <main class="page">
+    <header>
+      <nav aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#projects">Projects</a>
+        <a href="#publications">Publications</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div>
+        <p class="eyebrow">Assistant Professor of Mathematics</p>
+        <h1>Asst. Prof. Dr. Watthanan Jatuviriyapornchai</h1>
+        <p class="lead">
+          Applied probabilist working on stochastic processes, interacting particle systems,
+          condensation phenomena, and mathematical models of complex systems.
+        </p>
+        <div class="meta" aria-label="Academic affiliation">
+          <p>Department of Mathematics<br>Faculty of Science, Mahidol University</p>
+          <p>Statistics and Advanced Probability<br>Bangkok, Thailand</p>
+        </div>
+      </div>
+    </header>
+
+    <section id="about" aria-labelledby="about-title">
+      <div class="section-label" id="about-title">About</div>
+      <div class="content">
+        <p>
+          Dr. Watthanan Jatuviriyapornchai is an Assistant Professor in the
+          Department of Mathematics, Faculty of Science, Mahidol University. Her
+          research is centered on probability theory and stochastic models, with
+          particular emphasis on interacting particle systems and the emergence of
+          condensed phases in complex systems.
+        </p>
+        <p>
+          She received her PhD in Mathematics from the University of Warwick, UK.
+          Her work combines rigorous analysis, stochastic modelling, and
+          simulation-based approaches to understand collective behavior in systems
+          with many interacting components.
+        </p>
+      </div>
+    </section>
+
+    <section id="research" aria-labelledby="research-title">
+      <div class="section-label" id="research-title">Research Interests</div>
+      <div class="content">
+        <ul class="interests">
+          <li>Applied probability</li>
+          <li>Stochastic processes</li>
+          <li>Interacting particle systems</li>
+          <li>Condensation</li>
+          <li>Stochastic Monte Carlo methods</li>
+          <li>Mathematical modelling of complex systems</li>
+          <li>Interdisciplinary applications</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projects" aria-labelledby="projects-title">
+      <div class="section-label" id="projects-title">Current Projects</div>
+      <div class="content">
+        <ul class="projects">
+          <li>
+            <h3>Stochastic particle model of traffic flow</h3>
+            <p>Modelling traffic flow behavior for smart road development.</p>
+          </li>
+          <li>
+            <h3>Voter modelling for elections</h3>
+            <p>Studying Thailand election dynamics through stochastic voter models.</p>
+          </li>
+          <li>
+            <h3>Non-Markovian interacting particle systems</h3>
+            <p>Developing rigorous approaches for particle systems with memory.</p>
+          </li>
+          <li>
+            <h3>Poisson-Dirichlet structures in condensation</h3>
+            <p>Investigating the role of Poisson-Dirichlet distributions in condensing particle systems.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="publications" aria-labelledby="publications-title">
+      <div class="section-label" id="publications-title">Highlighted Publications</div>
+      <div class="content">
+        <ol class="publications">
+          <li class="publication">
+            <h3>
+              <a href="https://doi.org/10.1007/s10955-024-03362-0">
+                Condensation in Zero-Range Processes with a Fast Rate
+              </a>
+            </h3>
+            <p class="venue">Journal of Statistical Physics, 191, Article 147, 2024</p>
+            <p>With Stefan Grosskinsky.</p>
+          </li>
+          <li class="publication">
+            <h3>
+              <a href="https://doi.org/10.1007/s10955-019-02451-9">
+                Structure of the Condensed Phase in the Inclusion Process
+              </a>
+            </h3>
+            <p class="venue">Journal of Statistical Physics, 178, 682-710, 2020</p>
+            <p>With Paul Chleboun and Stefan Grosskinsky.</p>
+          </li>
+          <li class="publication">
+            <h3>
+              <a href="https://doi.org/10.1016/j.spa.2018.05.006">
+                Derivation of Mean-Field Equations for Stochastic Particle Systems
+              </a>
+            </h3>
+            <p class="venue">Stochastic Processes and their Applications, 129(4), 1455-1475, 2019</p>
+            <p>With Stefan Grosskinsky.</p>
+          </li>
+          <li class="publication">
+            <h3>
+              <a href="https://doi.org/10.1088/1751-8113/49/18/185005">
+                Coarsening Dynamics in Condensing Zero-Range Processes and Size-Biased Birth Death Chains
+              </a>
+            </h3>
+            <p class="venue">Journal of Physics A: Mathematical and Theoretical, 49(18), 185005, 2016</p>
+            <p>With Stefan Grosskinsky.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-title">
+      <div class="section-label" id="contact-title">Contact</div>
+      <div class="content">
+        <p>
+          Department of Mathematics, Faculty of Science, Mahidol University<br>
+          Room B203/8, 272 Rama VI Road, Ratchathewi, Bangkok 10400, Thailand
+        </p>
+        <p>
+          Email: <a href="mailto:watthanan.jat@mahidol.ac.th">watthanan.jat@mahidol.ac.th</a><br>
+          Office: +66 2 201 5356
+        </p>
+        <p>
+          <a href="https://mathematics.sc.mahidol.ac.th/people/faculty/watthanan-jatuviriyapornchai/">
+            Department profile
+          </a>
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2026 Watthanan Jatuviriyapornchai</p>
+    </footer>
+  </main>
 </body>
 </html>
