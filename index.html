@@ -13,6 +13,9 @@
       --light: #777777;
       --rule: #e5e5e5;
       --background: #ffffff;
+      --navy: #0b2d5c;
+      --navy-soft: #d9e6f7;
+      --navy-wash: #f3f7fc;
     }
 
     * {
@@ -33,14 +36,15 @@
     }
 
     a {
-      color: var(--text);
+      color: var(--navy);
       text-decoration: underline;
-      text-decoration-color: #b8b8b8;
+      text-decoration-color: var(--navy-soft);
       text-underline-offset: 0.18em;
     }
 
     a:hover {
-      text-decoration-color: var(--text);
+      color: #071f40;
+      text-decoration-color: var(--navy);
     }
 
     .page {
@@ -54,7 +58,17 @@
       grid-template-columns: 1fr;
       gap: 36px;
       padding: 44px 0 48px;
-      border-bottom: 1px solid var(--rule);
+      border-bottom: 2px solid var(--navy);
+      position: relative;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      inset: 0 auto auto 0;
+      width: 72px;
+      height: 5px;
+      background: var(--navy);
     }
 
     nav {
@@ -68,18 +82,21 @@
     nav a {
       color: var(--muted);
       text-decoration: none;
+      border-bottom: 1px solid transparent;
     }
 
     nav a:hover {
-      color: var(--text);
+      color: var(--navy);
+      border-bottom-color: var(--navy);
     }
 
     .eyebrow {
       margin: 0 0 12px;
-      color: var(--muted);
+      color: var(--navy);
       font-size: 0.92rem;
       letter-spacing: 0.04em;
       text-transform: uppercase;
+      font-weight: 700;
     }
 
     h1,
@@ -94,6 +111,7 @@
     h1 {
       max-width: 760px;
       font-size: clamp(2.4rem, 7vw, 4.8rem);
+      color: var(--navy);
     }
 
     h2 {
@@ -109,6 +127,8 @@
       margin: 24px 0 0;
       color: var(--muted);
       font-size: 1.16rem;
+      border-left: 4px solid var(--navy-soft);
+      padding-left: 18px;
     }
 
     .meta {
@@ -121,6 +141,9 @@
 
     .meta p {
       margin: 0;
+      padding: 14px 16px;
+      background: var(--navy-wash);
+      border-left: 3px solid var(--navy-soft);
     }
 
     section {
@@ -136,10 +159,11 @@
     }
 
     .section-label {
-      color: var(--light);
+      color: var(--navy);
       font-size: 0.92rem;
       text-transform: uppercase;
       letter-spacing: 0.04em;
+      font-weight: 700;
     }
 
     .content > *:first-child {
@@ -160,9 +184,20 @@
     }
 
     .interests li {
-      padding-bottom: 10px;
-      border-bottom: 1px solid var(--rule);
+      padding: 0 0 10px 16px;
+      border-bottom: 1px solid var(--navy-soft);
       color: var(--muted);
+      position: relative;
+    }
+
+    .interests li::before {
+      content: "";
+      position: absolute;
+      top: 0.72em;
+      left: 0;
+      width: 6px;
+      height: 6px;
+      background: var(--navy);
     }
 
     .projects,
@@ -177,7 +212,7 @@
     .projects li,
     .publication {
       padding-bottom: 22px;
-      border-bottom: 1px solid var(--rule);
+      border-bottom: 1px solid var(--navy-soft);
     }
 
     .projects li:last-child,
@@ -193,7 +228,7 @@
     }
 
     .publication .venue {
-      color: var(--light);
+      color: var(--navy);
       font-size: 0.95rem;
     }
 
@@ -201,6 +236,7 @@
       padding-top: 24px;
       color: var(--light);
       font-size: 0.92rem;
+      border-top: 1px solid var(--navy-soft);
     }
 
     @media (max-width: 720px) {
