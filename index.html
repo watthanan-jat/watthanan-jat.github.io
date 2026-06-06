@@ -233,6 +233,41 @@
       font-size: 0.95rem;
     }
 
+    .teaching-grid {
+      display: grid;
+      gap: 18px;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      margin-top: 22px;
+    }
+
+    .course-card {
+      background: var(--green-wash);
+      border: 1px solid var(--green-soft);
+      border-left: 4px solid var(--green);
+      padding: 18px;
+      text-decoration: none;
+    }
+
+    .course-card:hover {
+      background: #e8f6ee;
+    }
+
+    .course-card span {
+      color: var(--green-deep);
+      display: block;
+      font-size: 0.86rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+    }
+
+    .course-card p {
+      color: var(--muted);
+      margin: 8px 0 0;
+      text-decoration: none;
+    }
+
     footer {
       padding-top: 24px;
       color: var(--light);
@@ -344,19 +379,22 @@
     <section id="teaching" aria-labelledby="teaching-title">
       <div class="section-label" id="teaching-title">Teaching</div>
       <div class="content">
-        <ul class="projects">
-          <li>
-            <h3>
-              <a href="https://watthanan-jat.github.io/SCIM211-Simulation-Modelling/">
-                SCIM211 Simulation Modelling
-              </a>
-            </h3>
-            <p>
-              Course site for simulation modelling, Python-based lab activities,
-              and the Coffee Shop Simulation Project.
-            </p>
-          </li>
-        </ul>
+        <p>
+          Course pages collect teaching materials, lab or project information,
+          and links to public repositories where available.
+        </p>
+        <div class="teaching-grid">
+          <a class="course-card" href="https://watthanan-jat.github.io/SCIM211-Simulation-Modelling/">
+            <span>SCIM211</span>
+            <h3>Simulation Modelling</h3>
+            <p>Simulation models, Python labs, Monte Carlo, discrete-event simulation, Markov chains, and validation.</p>
+          </a>
+          <a class="course-card" href="teaching/scim311.html">
+            <span>SCIM311</span>
+            <h3>Statistical Modelling</h3>
+            <p>Statistical thinking, regression, diagnostics, uncertainty, interpretation, and communication of evidence.</p>
+          </a>
+        </div>
       </div>
     </section>
 
