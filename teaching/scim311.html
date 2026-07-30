@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="SCIM311 Statistical Modelling, with a focus on the post-midterm time-series component taught by Asst. Prof. Dr. Watthanan Jatuviriyapornchai.">
+  <meta name="description" content="Course information for SCIM311 Statistical Modelling: generalized linear models, time-series analysis, learning outcomes, assessment, and schedule.">
   <title>SCIM311 Statistical Modelling</title>
   <style>
     :root {
@@ -423,7 +423,7 @@
           <a href="#outcomes">Outcomes</a>
           <a href="#assessment">Assessment</a>
           <a href="#schedule">Schedule</a>
-          <a href="#materials">Materials</a>
+          <a href="#details">Course details</a>
         </div>
       </nav>
 
@@ -436,8 +436,8 @@
             analysis, model identification, diagnostics, and forecasting.
           </p>
           <div class="hero-actions">
-            <a class="button primary" href="#schedule">Post-midterm schedule</a>
-            <a class="button secondary" href="https://github.com/WJ-Mim/SCIM311-Statistical-Modelling">Open repository</a>
+            <a class="button primary" href="#overview">Course overview</a>
+            <a class="button secondary" href="#schedule">Full schedule</a>
           </div>
         </div>
 
@@ -454,14 +454,14 @@
 
   <main class="wrap">
     <aside class="scope" aria-labelledby="scope-title">
-      <p class="kicker">Teaching scope</p>
+      <p class="kicker">Materials release</p>
       <div>
-        <h2 id="scope-title">I teach only the post-midterm time-series component.</h2>
+        <h2 id="scope-title">Time-series materials will be available here after the midterm.</h2>
         <p>
-          Asst. Prof. Dr. Watthanan Jatuviriyapornchai teaches Weeks 10–16:
-          time-series foundations, stationary models, ARIMA/SARIMA, diagnostics,
-          and Box–Jenkins forecasting. The pre-midterm GLM component is taught by
-          Assoc. Prof. Pannapa Changpetch.
+          Until then, this page provides course-wide information for SCIM311.
+          Assoc. Prof. Pannapa Changpetch teaches the pre-midterm generalized
+          linear model component, and Asst. Prof. Dr. Watthanan Jatuviriyapornchai
+          teaches the post-midterm time-series component.
         </p>
       </div>
     </aside>
@@ -500,12 +500,22 @@
 
     <section class="section-grid" id="outcomes" aria-labelledby="outcomes-title">
       <div class="section-title">
-        <p class="kicker">Post-midterm focus</p>
-        <h2 id="outcomes-title">Time-series learning outcomes</h2>
-        <p>The portion taught by Watthanan addresses CLO3 and CLO4.</p>
+        <p class="kicker">What students will achieve</p>
+        <h2 id="outcomes-title">Course learning outcomes</h2>
+        <p>All four outcomes cover the complete course.</p>
       </div>
       <div class="content">
         <div class="cards">
+          <article class="card">
+            <span class="number">CLO1</span>
+            <h3>Explain GLM concepts</h3>
+            <p>Describe generalized linear model concepts and select models for different response types.</p>
+          </article>
+          <article class="card">
+            <span class="number">CLO2</span>
+            <h3>Apply generalized linear models</h3>
+            <p>Apply GLMs to data analysis and interpret fitted models in statistical and practical terms.</p>
+          </article>
           <article class="card">
             <span class="number">CLO3</span>
             <h3>Analyse stationary time series</h3>
@@ -529,31 +539,45 @@
       <div class="content">
         <div class="assessment-grid">
           <div class="assessment">
-            <strong>45%</strong>
-            <span>Time-series CLOs (CLO3 + CLO4) within the full course</span>
+            <strong>25%</strong>
+            <span>Individual work, including assignments and in-class activities</span>
+          </div>
+          <div class="assessment">
+            <strong>60%</strong>
+            <span>Written examinations across the course learning outcomes</span>
           </div>
           <div class="assessment">
             <strong>15%</strong>
-            <span>Individual work connected to CLO3 and CLO4</span>
-          </div>
-          <div class="assessment">
-            <strong>30%</strong>
-            <span>Examination weight connected to CLO3 and CLO4</span>
+            <span>Project work connected to the generalized linear model outcomes</span>
           </div>
         </div>
-        <p class="note">
-          <strong>Full-course assessment:</strong> individual work 25%,
-          examinations 60%, and project work 15%. The time-series figures above
-          identify only the CLO3–CLO4 contribution, not a separate course grade.
-        </p>
+        <div class="table-shell">
+          <table aria-label="Assessment weight by course learning outcome">
+            <thead>
+              <tr>
+                <th scope="col">Outcome</th>
+                <th scope="col">Individual work</th>
+                <th scope="col">Examination</th>
+                <th scope="col">Project</th>
+                <th scope="col">Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>CLO1</td><td>5%</td><td>10%</td><td>5%</td><td>20%</td></tr>
+              <tr><td>CLO2</td><td>5%</td><td>20%</td><td>10%</td><td>35%</td></tr>
+              <tr><td>CLO3</td><td>7.5%</td><td>10%</td><td>—</td><td>17.5%</td></tr>
+              <tr><td>CLO4</td><td>7.5%</td><td>20%</td><td>—</td><td>27.5%</td></tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </section>
 
     <section class="section-grid" id="schedule" aria-labelledby="schedule-title">
       <div class="section-title">
         <p class="kicker">Weekly roadmap</p>
-        <h2 id="schedule-title">My teaching weeks</h2>
-        <p>Only the post-midterm time-series section is listed here.</p>
+        <h2 id="schedule-title">Full course schedule</h2>
+        <p>The official plan covers both halves of the semester.</p>
       </div>
       <div class="content">
         <div class="table-shell">
@@ -566,6 +590,8 @@
               </tr>
             </thead>
             <tbody>
+              <tr><td>1–8</td><td>Generalized Linear Models</td><td>Concepts, response distributions, fitting, interpretation, and applications. Lecturer: Pannapa Changpetch.</td></tr>
+              <tr><td>9</td><td>Midterm examination</td><td>Assessment of the pre-midterm generalized linear model component.</td></tr>
               <tr><td>10</td><td>Introduction to time series</td><td>Time-indexed data, components, plots, and the role of R.</td></tr>
               <tr><td>11</td><td>Fundamental concepts</td><td>Stationarity, autocovariance, autocorrelation, and ACF/PACF.</td></tr>
               <tr><td>12</td><td>MA and AR models</td><td>Model structure, properties, identification, and interpretation.</td></tr>
@@ -580,33 +606,33 @@
       </div>
     </section>
 
-    <section class="section-grid" id="materials" aria-labelledby="materials-title">
+    <section class="section-grid" id="details" aria-labelledby="details-title">
       <div class="section-title">
-        <p class="kicker">Study resources</p>
-        <h2 id="materials-title">Course materials</h2>
-        <p>Lecture notes, guided activities, demonstrations, and reproducible R examples.</p>
+        <p class="kicker">Official information</p>
+        <h2 id="details-title">Course details</h2>
+        <p>No teaching files or learning materials are published on this page yet.</p>
       </div>
       <div class="materials">
-        <a class="material" href="https://github.com/WJ-Mim/SCIM311-Statistical-Modelling">
-          <span>GitHub</span>
-          <h3>Course repository</h3>
-          <p>Browse the complete collection of time-series teaching materials.</p>
-        </a>
-        <a class="material" href="https://github.com/WJ-Mim/SCIM311-Statistical-Modelling/blob/main/LectureNote/SCIM311_LectureNotes_Ch1_8.pdf">
-          <span>PDF</span>
-          <h3>Time-series lecture notes</h3>
-          <p>Chapters 1–8, from foundations through SARIMA.</p>
-        </a>
-        <a class="material" href="https://github.com/WJ-Mim/SCIM311-Statistical-Modelling/blob/main/LectureNote/activity_book/SCIM311_InClass_Activity_Book.pdf">
-          <span>Activities</span>
-          <h3>In-class activity book</h3>
-          <p>Structured exercises for model reasoning, calculation, and interpretation.</p>
-        </a>
-        <a class="material" href="https://github.com/WJ-Mim/SCIM311-Statistical-Modelling/tree/main/LectureNote/live_demos">
-          <span>R demonstrations</span>
-          <h3>Live demos and code</h3>
-          <p>Reproducible examples that connect theory, simulation, diagnostics, and forecasts.</p>
-        </a>
+        <article class="material">
+          <span>Course coordinator</span>
+          <h3>Assoc. Prof. Pannapa Changpetch, PhD</h3>
+          <p>Responsible instructor and lecturer for the pre-midterm GLM component.</p>
+        </article>
+        <article class="material">
+          <span>Time-series instructor</span>
+          <h3>Asst. Prof. Dr. Watthanan Jatuviriyapornchai</h3>
+          <p>Lecturer for the post-midterm time-series component.</p>
+        </article>
+        <article class="material">
+          <span>Requirements</span>
+          <h3>No prerequisites or co-requisites</h3>
+          <p>The course is a Year 3 elective in Industrial Mathematics and Data Science.</p>
+        </article>
+        <article class="material">
+          <span>Learning format</span>
+          <h3>3 hours of theory each week</h3>
+          <p>Supported by 6 hours of self-study per week and R-based demonstrations.</p>
+        </article>
       </div>
     </section>
   </main>
@@ -614,8 +640,8 @@
   <footer>
     <div class="wrap">
       <p>SCIM311 Statistical Modelling · First semester 2026</p>
-      <p>Time-series instructor: <a href="https://watthanan-jat.github.io/">Asst. Prof. Dr. Watthanan Jatuviriyapornchai</a></p>
-      <p>Updated <time datetime="2026-07-30">30 July 2026</time></p>
+      <p>GLM: Pannapa Changpetch · Time series: Watthanan Jatuviriyapornchai</p>
+      <p>Updated <time datetime="2026-07-31">31 July 2026</time></p>
     </div>
   </footer>
 </body>
